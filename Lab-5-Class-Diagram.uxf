@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>296</x>
+      <y>392</y>
+      <w>248</w>
+      <h>328</h>
+    </coordinates>
+    <panel_attributes>Animal
+--
+^Name:String
+^Type:String
+^notableFeatures[]:String
++Eats:String[]
++FoodType:String
+--
+^setName(String)
+^setType(String)
+^addFeature(String)
+
+^getName():String
+^getType():String
+
+^print()
+^printName()
+^printType()
+^printFeatures()
+
++addFood(String)
++setFoodType(String)
++printEats()
++printFoodType()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>304</x>
+      <y>88</y>
+      <w>240</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>Plant
+--
+^Name:String
+^Type:String
+^notableFeatures[]:String
++rootLength:int
+--
+
+^setName(String)
+^setType(String)
+^addFeature(String)
++setRootLength(int)
+
+^getName():String
+^getType():String
++getRootLength():int
+
+^print()
+^printName()
+^printType()
+^printFeatures()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>240</y>
+      <w>224</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>Organism
+--
++Name:String
++Type:String
++notableFeatures[]:String
+--
+
++setName(String)
++setType(String)
++addFeature(String)
+
++getName():String
++getType():String
+
++print()
++printName()
++printType()
++printFeatures()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>216</y>
+      <w>208</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>416</y>
+      <w>208</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
