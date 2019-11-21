@@ -7,10 +7,11 @@ public class Animals extends Organism
 	int numberOfPrey;
 	String foodType;
 		
-	Animals(String name, String type)
+	Animals(String name, String type, String foodType)
 	{
 		super(name, type);
 		numberOfPrey = 0;
+		this.foodType = foodType;
 	}
 		
 	void addFood(String food)
@@ -30,7 +31,7 @@ public class Animals extends Organism
 		this.foodType = typeOfFood;
 		return;
 	}
-	
+	/*
 	void print()
 	{
 		System.out.println(this.name + " is a " + this.type + " and has ");
@@ -42,7 +43,7 @@ public class Animals extends Organism
 		return;
 		
 	}
-	
+	*/
 	void printEats()
 	{
 		System.out.println("This animal eats:");
