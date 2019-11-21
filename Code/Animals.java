@@ -2,8 +2,8 @@ import Organism.Organism;
 
 public class Animals extends Organism
 {
-	const int MAXPREY = 10;
-	String eats[MAXPREY];
+	private static final int MAXPREY = 10;
+	String[] eats = new String[MAXPREY];
 	int numberOfPrey;
 	String foodType;
 		
@@ -17,11 +17,11 @@ public class Animals extends Organism
 	{
 		if(this.numberOfPrey < MAXPREY)
 		{
-			this.eats[this.numberOfPrey] = feature;
+			this.eats[this.numberOfPrey] = food;
 			this.numberOfPrey++;
 		}
 		else
-			System.out.println(this.name, " has too many prey.");
+			System.out.println(this.name + " has too many prey.");
 		return;
 	}
 	
