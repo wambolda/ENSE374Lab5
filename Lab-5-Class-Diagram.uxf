@@ -28,7 +28,7 @@ fontsize=16
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>208</x>
+      <x>216</x>
       <y>392</y>
       <w>336</w>
       <h>408</h>
@@ -38,8 +38,10 @@ fontsize=16
 ^Name:String
 ^Type:String
 ^notableFeatures[]:String
+^numberOfFeatures:int
 +Eats:String[]
 +FoodType:String
++numberOFPrey:int
 --
 ^setName(String)
 ^setType(String)
@@ -73,6 +75,7 @@ fontsize=16
 ^Name:String
 ^Type:String
 ^notableFeatures[]:String
+^numberOfFeatures:int
 +rootLength:int
 --
 
@@ -88,7 +91,8 @@ fontsize=16
 ^print()
 ^printName()
 ^printType()
-^printFeatures()</panel_attributes>
+^printFeatures()
++printRootLength()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -104,6 +108,7 @@ fontsize=16
 +Name:String
 +Type:String
 +notableFeatures[]:String
++numberOfFeatures:int
 --
 
 +setName(String)
@@ -133,12 +138,12 @@ fontsize=16
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>536</x>
+      <x>544</x>
       <y>416</y>
-      <w>208</w>
+      <w>200</w>
       <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>240.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>230.0;10.0;10.0;140.0</additional_attributes>
   </element>
 </diagram>
